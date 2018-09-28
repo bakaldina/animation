@@ -5,6 +5,10 @@ html,body {
     padding: 0;
     margin: 0;
 }
+body {
+    overflow-x: auto;
+    overflow-y: -webkit-paged-x;
+}
 .wrapper {
     width: 80%;
     height: 100%;
@@ -181,7 +185,7 @@ li.noborder.light-menu{
 }
 .slide {
     width: 100%;
-    height: 50%;
+    height: 100%;
     position: relative;
     background-repeat: no-repeat;
 }
