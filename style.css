@@ -5,8 +5,6 @@ html,body {
     padding: 0;
     margin: 0;
 }
-
-
 .wrapper {
     width: 80%;
     height: 100%;
@@ -341,7 +339,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 
 
 #slide2 {
-    background: url(img/1930.jpg) center center no-repeat;
+    background: url(img/1.jpg) center center no-repeat;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -350,7 +348,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide3 {
-    background: url(img/1940.jpg) center center no-repeat;
+    background: url(img/2.jpg) center center no-repeat;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -359,7 +357,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide4 {
-    background: url(img/1950.jpg) center center no-repeat;
+    background: url(img/3.jpg) center center no-repeat;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -368,7 +366,7 @@ input#round:hover,input#round:active,input#round:visited,input#round:focus {
 }
 
 #slide5 {
-    background: url(img/1960.jpg) center center no-repeat;
+    background: url(img/4.jpg) center center no-repeat;
 
     -webkit-background-size: cover;
     -moz-background-size: cover;
