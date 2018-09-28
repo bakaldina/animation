@@ -99,7 +99,4 @@ jQuery(document).ready(function ($) {
         goToByScroll(dataslide);
     });
 
-
-
-
 });
