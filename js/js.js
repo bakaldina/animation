@@ -67,7 +67,6 @@ jQuery(document).ready(function ($) {
             $("#topbar").fadeOut('fast');
             $(".navigation").fadeOut('fast');
             $(".clickon").fadeIn('fast');
-            $("#round").val('START EXPERIENCE');
         }
     });
 
