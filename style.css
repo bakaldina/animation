@@ -5,15 +5,9 @@ html,body {
     padding: 0;
     margin: 0;
 }
-body {
-    /* overflow: hidden; */
-    /* overflow-y: -webkit-paged-x; */
-}
 .item {
     font-size: 0;
     height: 100%;
-    overflow-x: hidden;
-    overflow-y: scroll;
     width: 200%;
 }
 .item::-webkit-scrollbar {
@@ -23,9 +17,29 @@ body {
     width: 50vw;
     height: 100%;
     display: inline-block;
-    /* background-repeat: no-repeat;
-    display: inline-block;
-    transform: rotate(270deg);  */
+    font-size: 14px;
+    position: relative;
+}
+.slide div {
+    position: fixed;
+    top: 40px;
+    left: 40px;
+}
+.slide .q {
+    z-index: 4;
+    color: red;
+}
+.slide .w {
+    z-index: 3;
+    color: greenyellow;
+}
+.slide .slide {
+    z-index: 2;
+    color: rebeccapurple;
+}
+.slide .r {
+    z-index: 1;
+    color: indianred;
 }
 #slide2 {
     background: url(img/1.jpg) center center no-repeat;
@@ -57,11 +71,11 @@ body {
     background-attachment: fixed;
 }
 
-/* .navigation {
+
+.navigation {
     position: fixed;
     z-index: 999;
-    top: 50%;
-    margin-top: -215px;
+    left: 30%;
     text-align: center;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -70,7 +84,7 @@ body {
 }
 .navigation li{
     color:rgba(51, 51, 51, 0.65) !important;
-    display:block;
+    display:inline-block;
     padding: 0 10px;
     line-height:37px;
     font-weight:600;
@@ -126,7 +140,7 @@ body {
 li.noborder.light-menu{
     display: none !important;
     border-bottom: 0 !important;
-} */
+} 
 
 
 
