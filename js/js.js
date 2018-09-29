@@ -103,24 +103,34 @@
 
 // });
 
-$(function () { // wait for document ready
-    // init
-    var controller = new ScrollMagic.Controller();
+// $(function () { // wait for document ready
+//     // init
+//     var controller = new ScrollMagic.Controller();
 
-    // define movement of panels
-    var wipeAnimation = new TimelineMax()
-        .fromTo("section#slide2", 1, {x:  "0%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-        .fromTo("section#slide3", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-        .fromTo("section#slide4", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-        .fromTo("section#slide5", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
-    // create scene to pin and link animation
-    new ScrollMagic.Scene({
-            triggerElement: "body",
-            triggerHook: "onLeave",
-            duration: "300%"
-        })
-        .setPin("body")
-        .setTween(wipeAnimation)
-        .addIndicators() // add indicators (requires plugin)
-        .addTo(controller);
-});
+//     // define movement of panels
+//     var wipeAnimation = new TimelineMax()
+//         .fromTo("section#slide2", 1, {x:  "0%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+//         .fromTo("section#slide3", 1, {x:  "100"}, {x: "-100%", ease: Linear.easeNone})  // in from right
+//         .fromTo("section#slide3", 1, {x:  "0%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+//         .fromTo("section#slide4", 1, {x:  "100%"}, {x: "-100%", ease: Linear.easeNone})  // in from right
+//         .fromTo("section#slide5", 1, {x:  "100%"}, {x: "0%", ease: Linear.easeNone})  // in from right
+//     // create scene to pin and link animation
+//     new ScrollMagic.Scene({
+//             triggerElement: "body",
+//             triggerHook: "onLeave",
+//             duration: "300%"
+//         })
+//         .setPin("body")
+//         .setTween(wipeAnimation)
+//         .addIndicators() // add indicators (requires plugin)
+//         .addTo(controller);
+// });
+// jQuery(document).ready(function ($) {
+// $('#horizontal-scroller').bind('mousewheel', function(event, delta) {
+//     if(delta == 1) {
+//         this.scrollLeft -= 15;
+//     }
+//     else {
+//         this.scrollLeft += 15;
+//     }
+// });
