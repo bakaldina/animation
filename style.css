@@ -20,27 +20,39 @@ html,body {
     font-size: 14px;
     position: relative;
 }
-.slide div {
+/* .slide div {
     position: fixed;
     top: 40px;
     left: 40px;
-}
-.slide .q {
+} */
+/* .slide .q {
+    position: absolute;
+    top: 20px;
+    left: 50px;
     z-index: 4;
     color: red;
 }
 .slide .w {
+    position: absolute;
+    top: 20px;
+    left: 70px;
     z-index: 3;
     color: greenyellow;
 }
-.slide .slide {
+.slide .e {
+    position: absolute;
+    top: 20px;
+    left: 90px;
     z-index: 2;
     color: rebeccapurple;
 }
 .slide .r {
+    position: absolute;
+    top: 20px;
+    left: 110px;
     z-index: 1;
     color: indianred;
-}
+} */
 #slide2 {
     background: url(img/1.jpg) center center no-repeat;
     -webkit-background-size: cover;
@@ -141,6 +153,22 @@ li.noborder.light-menu{
     display: none !important;
     border-bottom: 0 !important;
 } 
+.year {
+    width: 52%;
+    display: block;
+    overflow: auto;
+    position: absolute;
+    top: 20px;
+    left: 100px
+}
+.year-inner {
+    font-size: 22pt;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    text-align: left;
+}
+
 
 
 
