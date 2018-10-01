@@ -8,7 +8,7 @@ html,body {
 .item {
     font-size: 0;
     height: 100%;
-    width: 200%;
+    width: 250%;
 }
 .item::-webkit-scrollbar {
     display: none;
@@ -20,47 +20,14 @@ html,body {
     font-size: 14px;
     position: relative;
 }
-/* .slide div {
-    position: fixed;
-    top: 40px;
-    left: 40px;
-} */
-/* .slide .q {
-    position: absolute;
-    top: 20px;
-    left: 50px;
-    z-index: 4;
-    color: red;
-}
-.slide .w {
-    position: absolute;
-    top: 20px;
-    left: 70px;
-    z-index: 3;
-    color: greenyellow;
-}
-.slide .e {
-    position: absolute;
-    top: 20px;
-    left: 90px;
-    z-index: 2;
-    color: rebeccapurple;
-}
-.slide .r {
-    position: absolute;
-    top: 20px;
-    left: 110px;
-    z-index: 1;
-    color: indianred;
-} */
-#slide2 {
+#slide1 {
     background: url(img/1.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
-#slide3 {
+#slide2 {
     background: url(img/2.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -68,106 +35,49 @@ html,body {
     background-attachment: fixed;
 }
 
-#slide4 {
+#slide3 {
     background: url(img/3.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
-#slide5 {
+#slide4 {
     background: url(img/4.jpg) center center no-repeat;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
+#slide5 {
+    background: url(img/5.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
-
-.navigation {
-    position: fixed;
-    z-index: 999;
-    left: 30%;
-    text-align: center;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -ms-box-sizing: border-box;
-    box-sizing: border-box;
-}
-.navigation li{
-    color:rgba(51, 51, 51, 0.65) !important;
-    display:inline-block;
-    padding: 0 10px;
-    line-height:37px;
-    font-weight:600;
-    border-bottom:2px solid rgba(51, 51, 51, 0.65);
-    text-align:left;
-    width:53px;
-    padding-left: 28px;
-    cursor:pointer;
-    -webkit-transition: all .2s ease-in-out;
-    -moz-transition: all .2s ease-in-out;
-    -o-transition: all .2s ease-in-out;
-    -ms-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-}
-.navigation li span {
-    font-size: 70%;
-}
-.navigation li.dark-menu{
-    color: rgba(255, 255, 255, 0.95) !important;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.12) !important;
-    text-shadow: 0px 1px 1px black;
-
-}
-.navigation li.active.dark-menu{
-    color: white !important;
-    padding-left: 26px;
-    font-size: 13pt;
-    border-bottom: 2px solid rgb(255, 255, 255) !important;
-}
-.navigation li.dark-menu:hover{
-    border-bottom: 2px solid rgba(255, 255, 255, 0.52) !important;
-}
-.navigation li.light-menu{
-    border-bottom: 2px solid rgba(51,51,51,0.12) !important
-}
-.navigation li.active.light-menu{
-    color:#333333 !important;
-    padding-left: 26px;
-    font-size: 13pt;
-    border-bottom: 2px solid #333333 !important;
-}
-.navigation li.light-menu:hover{
-    border-bottom: 2px solid rgba(51, 51, 51, 0.52) !important;
-}
-.navigation .noborder{
-    border: none !important;
-    padding-left: 27px;
-}
-.navigation li.dark-menu.noborder:hover,.navigation li.light-menu.noborder:hover{
-    border-left: none !important;
-    padding-left: 27px;
-}
-li.noborder.light-menu{
-    display: none !important;
-    border-bottom: 0 !important;
-} 
-.year {
-    width: 52%;
+.title-right {
     display: block;
-    overflow: auto;
-    position: absolute;
-    top: 20px;
-    left: 100px
-}
-.year-inner {
+    position: fixed;
+    top: 40px;
+    left: 25vw;
     font-size: 22pt;
     color: white;
-    width: 100%;
-    margin-top: 10px;
-    text-align: left;
 }
+.title-left {
+    display: block;
+    position: fixed;
+    top: 40px;
+    right: 20vw;
+    font-size: 22pt;
+    color: white;
+    /* z-index: 222; */
+}
+#slide1 .title-left {
+    z-index: 22;
+}
+
 
 
 
