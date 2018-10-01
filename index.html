@@ -5,35 +5,113 @@
     <meta charset="UTF-8">
     <title>Animation effect</title>
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 </head>
 
-<body id="horizontal-scroller">
+<body>
+    <header class="header">
+        <div class="header-item">
+            <div class="logo header__logo">
+                <a href="#">
+                    <img src="img/logo.svg" alt="Ситимобил">
+                </a>
+            </div>
+            <div class="social">
+                <a href="https://www.facebook.com/citymobiltaxi/">
+                    <img src="img/fb.svg" alt="FB">
+                </a>
+                <a href="https://vk.com/citymobiltaxi">
+                    <img src="img/vk.svg" alt="VK">
+                </a>
+                <a href="https://ok.ru/taksisitim">
+                    <img src="img/ok.svg" alt="OK">
+                </a>
+            </div>
+        </div>
+    </header>
     <section class="item">
         <section class="slide" id="slide1" data-slide="1">
-            <div class="title-right" style="display: block;">Таксипортируйся</div>
+            <div class="block-right block-first" style="display: block;">
+                <div class="title">Таксипортация</div>
+                <button class="button">Поездки от 89 Р</button>
+                <div class="slide-text">Чтобы поездок было много,<br> они должны стоить мало.</div>
+            </div>
             <div class="title-left" style="display: block;">Наши герои</div>
         </section>
         <section class="slide" id="slide2" data-slide="2">
-            <div class="title-right animated fadeInRight delay-2s" style="display: none;">Филипп</div>
+            <div class="block-right animated fadeInRight delay-2s" style="display: none;">
+                <div class="title">Филипп</div>
+                <div class="slide-text">34 года. Юрист в инвестиционном фонде. Часто таксипортируется в течение рабочего дня.</div>
+                <button class="button" onclick="modalOpen('1')">Смотреть
+                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#FFC700" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                    </svg>
+                </button>
+            </div>
             <div class="title-left animated fadeInRight delay-2s" style="display: none;">Марк и Дарья</div>
         </section>
         <section class="slide" id="slide3" data-slide="3">
-            <div class="title-right animated fadeInRight delay-2s" style="display: none;">Марк и Дарья</div>
+            <div class="block-right animated fadeInRight delay-2s" style="display: none;">
+                <div class="title">Марк и Дарья</div>
+                <div class="slide-text">Влюбленная пара, вместе 2 года. В курсе всех культурных событий города  и таксипортируются из музея на концерт.</div>
+                <button class="button" onclick="modalOpen('2')">Смотреть
+                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#FFC700" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                    </svg>
+                </button>
+            </div>
             <div class="title-left animated fadeInRight delay-2s" style="display: none;">Семья Зайцевых</div>
         </section>
         <section class="slide" id="slide4" data-slide="4">
-            <div class="title-right animated fadeInRight delay-2s" style="display: none;">Семья Зайцевых</div>
+            <div class="block-right animated fadeInRight delay-2s" style="display: none;">
+                <div class="title">Семья Зайцевых</div>
+                <div class="slide-text">В браке 5 лет и есть дочь.  Предпочитают таксипортироваться  в выходные в парк и по магазинам.</div>
+                <button class="button" onclick="modalOpen('3')">Смотреть
+                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#FFC700" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                    </svg>
+                </button>
+            </div>
             <div class="title-left animated fadeInRight delay-2s" style="display: none;">Что их объединяет?</div>
         </section>
         <section class="slide" id="slide5" data-slide="5">
-            <div class="title-right animated fadeInRight delay-2s" style="display: none;">Пятый</div>
+            <div class="block-right animated fadeInRight delay-2s" style="display: none;">Пятый</div>
             <div class="title-left animated fadeInRight delay-2s" style="display: none;">Что их объединяет?</div>
         </section>
     </section>
-
-
+    <div class="video-modal1">
+        <div class="video-modal1_overlay" onclick="modalClose('1')"></div>
+        <div class="video-modal1_content">
+            <iframe src="https://www.youtube.com/embed/jSRHa2Gvl4Q?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            <div class="close" onclick="modalClose('1')">Закрыть</div>
+        </div>
+    </div>
+    <div class="video-modal2">
+    <div class="video-modal2_overlay" onclick="modalClose('2')"></div>
+        <div class="video-modal2_content">
+            <iframe src="https://www.youtube.com/embed/fQ214iOUQiA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            <div class="close" onclick="modalClose('2')">Закрыть</div>
+        </div>
+    </div>
+    <div class="video-modal3">
+    <div class="video-modal3_overlay" onclick="modalClose('3')"></div>
+        <div class="video-modal3_content">
+            <iframe src="https://www.youtube.com/embed/saODFrQbdek?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+            <div class="close" onclick="modalClose('3')">Закрыть</div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>
     <script type="text/javascript" src='js/jquery.mousewheel.min.js'></script>
