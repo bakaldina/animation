@@ -9,29 +9,21 @@ html,body {
 
 .header  {
     max-width:1000px;
-    height: 10vh;
+    height: 120px;
     margin: 0px auto;
     z-index: 0;
 }
 .header-item {
     width:1000px;
-    height: 10vh;
     position: fixed;
-    z-index: 9999;
+    z-index: 4;
 }
 
-.social,
-.copyright {
+.social {
     float: right;
     display: inline-block;
-    padding-top: 26px;
-    padding: 20px;
-}
-.copyright {
-    float: right;
-    display: inline-block;
+    padding-top: 45px;
     vertical-align: middle;
-    line-height: 19px;
 }
 .social {
     margin-top: 5px;
@@ -49,7 +41,8 @@ html,body {
     height: 38px;
     width: 300px;
     display: inline-block;
-    padding: 20px;
+    vertical-align: middle;
+    padding-top: 42px;
 }
 /* .wrapper {
     width: 100%;
@@ -75,96 +68,131 @@ html,body {
 }
 #slide1 {
     background: url(img/1.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
 #slide2 {
     background: url(img/2.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
 
 #slide3 {
     background: url(img/3.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
 #slide4 {
     background: url(img/4.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
 #slide5 {
     background: url(img/5.jpg) center center no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
 }
 .block-right {
     display: block;
-    position: absolute;
-    top: 40px;
-    left: 17vw;
+    position: fixed;
+    top: 155px;
+    right: 59vw;
     font-size: 44px;
     color: white;
-}
-.block-right {
-    display: block;
-    position: absolute;
-    top: 40px;
-    left: 17vw;
-    color: #fff
 }
 .title {
     font-size: 44px;
     color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    letter-spacing: 1.2px;
 }
 .title-left {
     display: block;
-    position: absolute;
-    top: 40px;
-    left: 65vw;
-    width: 30vw;
+    position: fixed;
+    top: 155px;
+    left: 54vw;
     font-size: 44px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
     color: white;
-    /* z-index: 222; */
+    width: 400px;
+    text-align: left;
+    letter-spacing: -1.2px;
+}
+.title-left a {
+    color: #fff;
+    text-decoration: none;
+    padding-bottom: 3px;
+}
+.title-left a span {
+    border-bottom: 3px solid #fff;
+}
+.title-left a:hover,
+.title-left a span:hover  {
+    color: rgba(255, 255, 255, 0.3);
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+.fa, .fas {
+    font-size: 29px;
+    padding-left: 5px;
 }
 #slide1 .title-left {
     z-index: 22;
 }
 .button {
-    width: 225px;
+    width: 205px;
     height: 60px;
     text-align: center;
     border-radius: 100px;
-    font-size: 25px;
+    font-size: 21px;
     cursor: pointer;
     color: #fff;
     margin-top: 30px;
     background-color: transparent;
     border: 2px solid #fff;
 }
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.button:focus {
+    outline: none;
+}
 .slide-text {
     font-size: 18px;
     margin-top: 30px;
-    width: 350px;
+    margin-bottom: 20px;
+    width: 360px;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 26px;
 }
 .block-first .slide-text {
-    font-size: 28px;
+    font-size: 25px;
+    font-weight: 100;
+    line-height: 33px;
+    margin-bottom: 45px;
 }
 .block-first .button {
     background-color: #ff7200;
     border: none;
     color: #fff;
+    font-weight: 100;
+}
+.block-first .button:hover {
+    background-color: #ff5c00;
+}
+.button svg {
+    vertical-align: middle;
+}
+.block-first .button svg {
+    padding-left: 5px;
+    padding-bottom: 6px;
+}
+.block-first .button span {
+    font-size: 35px;
+    font-weight: 300;
+    padding-left: 5px;
 }
 
 .video-modal1,
@@ -176,13 +204,13 @@ html,body {
     height: 600px;
     left: 50%;
     top: 50%;
-    z-index: 4;
+    z-index: 10;
 }
 .video-modal1_content,
 .video-modal2_content,
 .video-modal3_content {
     transform: translate(-50%, -50%);
-    z-index: 3;
+    z-index: 9;
     position: relative;
     background-size: contain;
     width: 1010px;
@@ -195,17 +223,18 @@ html,body {
     color: #fff;
     font-size: 24px;
     cursor: pointer;
+    font-weight: 100;
 }
 .video-modal1_overlay,
 .video-modal2_overlay,
 .video-modal3_overlay {
-    z-index: 1;
+    z-index: 8;
     width: 100%;
     height: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
 }
 
@@ -213,7 +242,27 @@ iframe {
     width: 1010px;
     height: 600px;
 }
-
+/* .arrow-right {
+    width: 0px;
+    height: 0px;
+    border: 14px solid transparent;
+    border-top-color: #fff;
+    margin: 0;
+    padding: 0;
+    float: right;
+    transform: rotate(270deg) translate(0px, 10px);
+    position: relative;
+    top: 17px;
+}
+.arrow-right:before {
+    content: '';
+    width: 0px;
+    height: 0px;
+    border: 14px solid transparent;
+    border-top-color: red;
+    display: inline-block;
+    transform: translate(-6px, -15px);
+} */
 
 
 
