@@ -1,5 +1,4 @@
 
-
 $(document).ready(function () {
     $('html, body, *').mousewheel(function (e, delta) {
         this.scrollLeft -= (delta * 3);
@@ -16,54 +15,52 @@ $(document).ready(function () {
         }
         if ($(window).scrollLeft() >= halfScreen * 0.5) {
             $('#slide1 .title-left').css('display', 'none');
+            $('#slide2 .block-right').css('display', 'block');
         }
         if ($(window).scrollLeft() >= halfScreen * 0.9) {
             $('#slide2 .title-left').css('display', 'block');
             $('#slide2 .title-left').css('z-index', '2');
         }
-        if ($(window).scrollLeft() >= halfScreen * 0.8) {
-            $('#slide2 .block-right').css('display', 'block');
-        }
-        if ($(window).scrollLeft() >= halfScreen * 1.4) {
+        if ($(window).scrollLeft() >= halfScreen * 1.5) {
             $('#slide2 .title-left').css('display', 'none');
+            $('#slide3 .block-right').css('display', 'block');
         }
         if ($(window).scrollLeft() >= halfScreen * 1.9) {
             $('#slide3 .title-left').css('display', 'block');
             $('#slide3 .title-left').css('z-index', '2');
         }
-        if ($(window).scrollLeft() >= halfScreen * 1.8) {
-            $('#slide3 .block-right').css('display', 'block');
-        }
-        if ($(window).scrollLeft() >= halfScreen * 2.4) {
+        if ($(window).scrollLeft() >= halfScreen * 2.5) {
             $('#slide3 .title-left').css('display', 'none');
+            $('#slide4 .block-right').css('display', 'block');
         }
         if ($(window).scrollLeft() >= halfScreen * 2.9) {
-            $('#slide4 .title-left').css('display', 'block');
-            $('#slide4 .title-left').css('z-index', '2');
-        }
-        if ($(window).scrollLeft() >= halfScreen * 2.8) {
-            $('#slide4 .block-right').css('display', 'block');
             $('#slide5 .title-left').css('display', 'block');
         }
-        if ($(window).scrollLeft() <= halfScreen * 2.83) {
-            $('#slide4 .title-left').css('display', 'none');
-        }
-        if ($(window).scrollLeft() <= halfScreen * 0.7) {
+
+        if ($(window).scrollLeft() <= halfScreen * 0.65) {
             $('#slide2 .block-right').css('display', 'none');
             $('#slide3 .block-right').css('display', 'none');
             $('#slide4 .block-right').css('display', 'none');
+        }
+
+        if ($(window).scrollLeft() <= halfScreen * 0.92) {
             $('#slide2 .title-left').css('display', 'none'); 
             $('#slide5 .title-left').css('display', 'none');
         }
-        if ($(window).scrollLeft() <= halfScreen * 1.7) {
+        if ($(window).scrollLeft() <= halfScreen * 1.66) {
             $('#slide3 .block-right').css('display', 'none');
             $('#slide4 .block-right').css('display', 'none');
+        }
+        if ($(window).scrollLeft() <= halfScreen * 1.94) {
             $('#slide3 .title-left').css('display', 'none');
             $('#slide5 .title-left').css('display', 'none');
         }
-        if ($(window).scrollLeft() < halfScreen * 2.7) { 
+        if ($(window).scrollLeft() < halfScreen * 2.65) { 
             $('#slide4 .block-right').css('display', 'none');
             $('#slide4 .title-left').css('display', 'none');
+
+        }
+        if ($(window).scrollLeft() <= halfScreen * 2.93) {
             $('#slide5 .title-left').css('display', 'none');
         }
         if ($(window).scrollLeft() >= halfScreen * 2.9) {
