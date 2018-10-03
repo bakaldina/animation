@@ -1,10 +1,8 @@
 
+
 $(document).ready(function () {
-    
     $('html, body, *').mousewheel(function (e, delta) {
-        // multiplying by 40 is the sensitivity, 
-        // increase to scroll faster.
-        this.scrollLeft -= (delta * 30);
+        this.scrollLeft -= (delta * 3);
         e.preventDefault();
     });
 
@@ -45,6 +43,7 @@ $(document).ready(function () {
         }
         if ($(window).scrollLeft() >= halfScreen * 2.8) {
             $('#slide4 .block-right').css('display', 'block');
+            $('#slide5 .title-left').css('display', 'block');
         }
         if ($(window).scrollLeft() <= halfScreen * 2.83) {
             $('#slide4 .title-left').css('display', 'none');
@@ -54,15 +53,21 @@ $(document).ready(function () {
             $('#slide3 .block-right').css('display', 'none');
             $('#slide4 .block-right').css('display', 'none');
             $('#slide2 .title-left').css('display', 'none'); 
+            $('#slide5 .title-left').css('display', 'none');
         }
         if ($(window).scrollLeft() <= halfScreen * 1.7) {
             $('#slide3 .block-right').css('display', 'none');
             $('#slide4 .block-right').css('display', 'none');
             $('#slide3 .title-left').css('display', 'none');
+            $('#slide5 .title-left').css('display', 'none');
         }
         if ($(window).scrollLeft() < halfScreen * 2.7) { 
             $('#slide4 .block-right').css('display', 'none');
             $('#slide4 .title-left').css('display', 'none');
+            $('#slide5 .title-left').css('display', 'none');
+        }
+        if ($(window).scrollLeft() >= halfScreen * 2.9) {
+            $('#slide1 .block-left').css('display', 'none');
         }
     });
 

@@ -35,66 +35,108 @@
     </header>
     <section class="item">
         <section class="slide" id="slide1" data-slide="1">
-            <div class="block-right block-first" style="display: block;">
-                <div class="title">Таксипортация</div>
-                <a href="#slide5">
-                    <button class="button">от <span>89 ₽</span>
-                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
-                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
-                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
-                    </svg></button>
-                </a>
-                <div class="slide-text">Чтобы поездок было много,<br> они должны стоить мало.</div>
+            <div class="main">
+                <div class="block-right block-first" style="display: block;">
+                    <div class="title">Таксипортация</div>
+                    <a href="#slide6">
+                        <button class="button">от <span>89 ₽</span>
+                        <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                            <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                            <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                        </svg></button>
+                    </a>
+                    <div class="slide-text">Чтобы поездок было много,<br> они должны стоить мало.</div>
+                </div>
+                <div class="title-left" style="display: block;" onclick="goNext()"><a href="#slide2"><span>Наши герои</span> <i class="fas fa-angle-right animated infinite fadeOut delay-3s"></i></a></div>
             </div>
-            <div class="title-left" style="display: block;" onclick="goNext()"><a href="#slide2"><span>Наши герои</span> <i class="fas fa-angle-right"></i></a></div>
         </section>
         <section class="slide" id="slide2" data-slide="2">
-            <div class="block-right animated fadeInRight delay-5s" style="display: none;">
-                <div class="title">Филипп</div>
-                <div class="slide-text">34 года. Юрист в инвестиционном фонде. Часто таксипортируется в течение рабочего дня.</div>
-                <button class="button" onclick="modalOpen('1')">Смотреть
-                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
-                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
-                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
-                    </svg>
-                </button>
+            <div class="main">
+                <div class="block-right animated fadeInRight delay-5s" style="display: none;">
+                    <div class="title">Филипп</div>
+                    <div class="slide-text">34 года. Юрист в инвестиционном фонде. Часто таксипортируется в течение рабочего дня.</div>
+                    <button class="button" onclick="modalOpen('1')">Смотреть
+                        <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                            <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                            <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a href="#slide3"><span>Марк и Дарья</span> <i class="fas fa-angle-right animated infinite fadeOut delay-1s"></i></a></div>
             </div>
-            <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a href="#slide3"><span>Марк и Дарья</span> <i class="fas fa-angle-right"></i></a></div>
         </section>
         <section class="slide" id="slide3" data-slide="3">
-            <div class="block-right animated fadeInRight delay-5s" style="display: none;">
-                <div class="title">Марк и Дарья</div>
-                <div class="slide-text">Влюбленная пара, вместе 2 года. В курсе всех культурных событий города и таксипортируются из музея на концерт.</div>
-                <button class="button" onclick="modalOpen('2')">Смотреть
-                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
-                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
-                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
-                    </svg>
-                </button>
+            <div class="main">
+                <div class="block-right animated fadeInRight delay-5s" style="display: none;">
+                    <div class="title">Марк и Дарья</div>
+                    <div class="slide-text">Влюбленная пара, вместе 2 года. В курсе всех культурных событий города и таксипортируются из музея на концерт.</div>
+                    <button class="button" onclick="modalOpen('2')">Смотреть
+                        <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                            <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                            <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a href="#slide4"><span>Семья Зайцевых</span> <i class="fas fa-angle-right animated infinite fadeOut delay-1s"></i></a></div>
             </div>
-            <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a href="#slide4"><span>Семья Зайцевых</span> <i class="fas fa-angle-right"></i></a></div>
         </section>
         <section class="slide" id="slide4" data-slide="4">
-            <div class="block-right animated fadeInRight delay-5s" style="display: none;">
-                <div class="title">Семья Зайцевых</div>
-                <div class="slide-text">В браке 5 лет и есть дочь. Предпочитают таксипортироваться в выходные в парк и по магазинам.</div>
-                <button class="button" onclick="modalOpen('3')">Смотреть
-                    <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
-                        <rect width="21" height="2" rx="1" transform="translate(0 4)" />
-                        <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
-                        <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
-                    </svg>
-                </button>
+            <div class="main">
+                <div class="block-right animated fadeInRight delay-5s" style="display: none;">
+                    <div class="title">Семья Зайцевых</div>
+                    <div class="slide-text">В браке 5 лет и есть дочь. Предпочитают таксипортироваться в выходные в парк и по магазинам.</div>
+                    <button class="button" onclick="modalOpen('3')">Смотреть
+                        <svg class="svg" width="21" height="10" viewBox="0 0 21 10" fill="#fff" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="21" height="2" rx="1" transform="translate(0 4)" />
+                            <rect width="7" height="2" rx="1" transform="translate(15.1758) rotate(36)" />
+                            <rect width="7" height="2" rx="1" transform="translate(14 8.1145) rotate(-36)" />
+                        </svg>
+                    </button>
+                </div>
+                <!-- <div class="title-left animated fadeInRight delay-5s" style="display: block;"><a  href="#slide6"><span>Что их <br>объединяет?</span> <i class="fas fa-angle-right"></i></a></div> -->
             </div>
-            <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a><span>Что их <br>объединяет?</span> <i class="fas fa-angle-right"></i></a></div>
         </section>
         <section class="slide" id="slide5" data-slide="5">
-            <div class="title-left animated fadeInRight delay-5s" style="display: none;">Что их <br> объединяет?</div>
+            <div class="title-left animated fadeInRight delay-5s" style="display: none;"><a  href="#slide6"><span>Что их <br> объединяет?</span><i class="fas fa-angle-right animated infinite fadeOut delay-1s"></i></a></div>
         </section>
-    </section>
+        <section class="slide" id="slide6" data-slide="6d">
+            <div class="footer wrapper">
+                <div class="title"><a  href="#slide1"><i class="fas fa-angle-left animated infinite fadeOut delay-1s"></i>Они знают как работает <br>таксипортация:</a></div>
+                <div class="footer-text-1">чтобы поездок было много, они должны стоить мало
+                </div>
+                <div class="footer-text-2">Начните таксипортироваться вместе с нашим героями прямо сейчас — используйте промо-код:
+                    <span>TAXIPORT89</span> и получите скидку по 50 рублей на первые 10 поездок через приложение «Ситимобил
+                    Заказ такси в Москве»*
+                </div>
+                <div class="promo">
+                    <div class="promo-wrapper">
+                        <div class="bottom-title">Получить ссылку и скачать приложение:</div>
+                        <form class="phone-container" id="form">
+                            <label>
+                                <input type="text" class="js-phone-up phone" name="ph" placeholder="+7 " data-rule-required="true" data-rule-minlength="10"
+                                    data-msg="Неправильный формат номера.">
+                            </label>
+                            <input type="submit" class="phone-button" value="Получить ссылку">
+                        </form>
+                    </div>
+                </div>
+                <div class="bottom_app" id='app'>
+                    <a href="https://app.appsflyer.com/id579220388?pid=Citymobil&amp;c=landing_app" class="bottom_app_apple">
+                        <img src="img/app-store.svg" alt="Эпл">
+                    </a>
+                    <a href="https://app.appsflyer.com/com.citymobil?pid=Citymobil&amp;c=landing_app" class="bottom_app_google">
+                        <img src="img/google-play.svg" alt="Гугл">
+                    </a>
+                </div>
+                <div class="bottom_info">*Промокод действует только для новых клиентов через приложение «Ситимобил Заказ такси в Москве». 
+                    Организатор: ООО "Сити-Мобил". 117997, г. Москва, ул. Архитектора Власова, д. 55. ОГРН 1097746203785. Срок проведения 
+                    акции с 16.07.2018 г. по 15.12.2018 г. Подробности об организаторе акции, о правилах ее проведения можно узнать на сайте 
+                    организатора по адресу: www.city-mobil.ru.</div>
+            </div>
+        </section>
     <div class="video-modal1">
         <div class="video-modal1_overlay" onclick="modalClose('1')"></div>
         <div class="video-modal1_content">
