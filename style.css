@@ -379,6 +379,7 @@ iframe {
     width: 70%;
     font-size: 11px;
 }
+
 @media screen and (max-height: 920px) {
     .footer .title {
         margin-top: 3vh;
@@ -446,4 +447,35 @@ iframe {
     }
 
 }
+@media screen and (max-height: 635px) {
+    .footer .title {
+        font-size: 30px;
+    }
+    .footer-text-1 {
+        margin-bottom: 1vh;
+        font-size: 20px;
+    }
+    .footer-text-2 {
+        margin-bottom: 1vh;
+        font-size: 14px;
+    }
+    .promo {
+        margin-top: 3vh;
+        margin-bottom: 2vh;
+        height: 180px;
+    }
+    .bottom-title {
+        margin-bottom: 2vh;
+    }
+    .bottom-text-title {
+        margin-bottom: 3vh;
+    }
+    .bottom_app {
+        margin-top: 2vh;
+    }
+    .bottom_info {
+        font-size: 9px;
+    }
+}
+
 
